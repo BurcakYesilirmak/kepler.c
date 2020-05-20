@@ -29,13 +29,12 @@ else
 fprintf( out2,"%d %d %.15le %.15le %.15le\n",i,error,e,M,E);
 }
 }
-
-
 fclose(out1);
 fclose(out2);
 fclose(out3);
 return 0;
 }
+
 int Newton_Raphson(double M,double e,double *E) {
     int error, count;
     double t, F, dF ;
